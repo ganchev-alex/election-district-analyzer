@@ -1,0 +1,54 @@
+District: Sofia
+Mech: 5%
+DPS: 20%
+GERB: 40%
+ITN: 30%
+PP-DB: 25%
+V: 10%
+BSP: 35%
+
+District: Plovdiv
+Mech: 4%
+DPS: 20%
+GERB: 40%
+ITN: 16%
+PP-DB: 12%
+V: 8%
+BSP: 24%
+
+District: Varna
+Mech: 8.88889%
+DPS: 26.6667%
+GERB: 35.5556%
+ITN: 24.4444%
+PP-DB: 17.7778%
+V: 11.1111%
+BSP: 35.5556%
+
+District: Burgas
+Mech: 8.57143%
+DPS: 22.8571%
+GERB: 34.2857%
+ITN: 20%
+PP-DB: 17.1429%
+V: 14.2857%
+BSP: 34.2857%
+
+District: Ruse
+Mech: 2%
+DPS: 24%
+GERB: 40%
+ITN: 16%
+PP-DB: 8%
+V: 4%
+BSP: 32%
+
+District: Blagoevgrad
+Mech: 2.5%
+DPS: 20%
+GERB: 40%
+ITN: 15%
+PP-DB: 10%
+V: 5%
+BSP: 25%
+
