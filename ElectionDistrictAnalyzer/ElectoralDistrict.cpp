@@ -41,6 +41,8 @@ void ElectoralDistrict::displayPartyVotesPercentage() const {
 		cout << "Party " << party.first << ": " << fixed << setprecision(2) << party.second << "%" << endl;
 	}
 
+	cout << "Non-voters percantage: " << calculateNonVoterPercenatge() << fixed << setprecision(2) << "%" << endl;
+
 	cout << "\n";
 }
 
@@ -56,9 +58,13 @@ ostream& operator<<(ostream& out, const ElectoralDistrict& district) {
 }
 
 bool ElectoralDistrict::hasClearWinner() const {
-	int maxVotes = *max_element(votesPerParty.begin(), votesPerParty.end());
-	int countMax = count(votesPerParty.begin(), votesPerParty.end(), maxVotes);
-	return countMax == 1;
+	for (int votes : votesPerParty) {
+		double percentage = static_cast<double>(votes) / totalVoters * 100;
+		if (percentage > 50.0) {
+			return true;
+		}
+	}
+	return false;
 }
 
 double ElectoralDistrict::calculateNonVoterPercenatge() const {
